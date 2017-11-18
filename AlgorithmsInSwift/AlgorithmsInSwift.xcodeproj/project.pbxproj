@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E0FDA6251FC0BF22008DFB5A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FDA6241FC0BF22008DFB5A /* main.swift */; };
+		E0FDA62C1FC0C253008DFB5A /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FDA62B1FC0C253008DFB5A /* BubbleSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +26,19 @@
 /* Begin PBXFileReference section */
 		E0FDA6211FC0BF22008DFB5A /* AlgorithmsInSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmsInSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FDA6241FC0BF22008DFB5A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E0FDA62B1FC0C253008DFB5A /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
+		E0FDA64D1FC0D80B008DFB5A /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E0FDA61E1FC0BF22008DFB5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0FDA64A1FC0D80B008DFB5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				E0FDA6211FC0BF22008DFB5A /* AlgorithmsInSwift */,
+				E0FDA64D1FC0D80B008DFB5A /* UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				E0FDA6241FC0BF22008DFB5A /* main.swift */,
+				E0FDA62B1FC0C253008DFB5A /* BubbleSort.swift */,
 			);
 			path = AlgorithmsInSwift;
 			sourceTree = "<group>";
@@ -82,6 +94,23 @@
 			productReference = E0FDA6211FC0BF22008DFB5A /* AlgorithmsInSwift */;
 			productType = "com.apple.product-type.tool";
 		};
+		E0FDA64C1FC0D80B008DFB5A /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0FDA6521FC0D80B008DFB5A /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				E0FDA6491FC0D80B008DFB5A /* Sources */,
+				E0FDA64A1FC0D80B008DFB5A /* Frameworks */,
+				E0FDA64B1FC0D80B008DFB5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = E0FDA64D1FC0D80B008DFB5A /* UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +122,10 @@
 				ORGANIZATIONNAME = BrewOps;
 				TargetAttributes = {
 					E0FDA6201FC0BF22008DFB5A = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					E0FDA64C1FC0D80B008DFB5A = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -111,9 +144,20 @@
 			projectRoot = "";
 			targets = (
 				E0FDA6201FC0BF22008DFB5A /* AlgorithmsInSwift */,
+				E0FDA64C1FC0D80B008DFB5A /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0FDA64B1FC0D80B008DFB5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0FDA61D1FC0BF22008DFB5A /* Sources */ = {
@@ -121,6 +165,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0FDA6251FC0BF22008DFB5A /* main.swift in Sources */,
+				E0FDA62C1FC0C253008DFB5A /* BubbleSort.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0FDA6491FC0D80B008DFB5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +211,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -216,6 +269,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -251,6 +305,32 @@
 			};
 			name = Release;
 		};
+		E0FDA6531FC0D80B008DFB5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BrewOps.UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		E0FDA6541FC0D80B008DFB5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BrewOps.UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -268,6 +348,15 @@
 			buildConfigurations = (
 				E0FDA6291FC0BF22008DFB5A /* Debug */,
 				E0FDA62A1FC0BF22008DFB5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0FDA6521FC0D80B008DFB5A /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0FDA6531FC0D80B008DFB5A /* Debug */,
+				E0FDA6541FC0D80B008DFB5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
