@@ -10,11 +10,15 @@ import Foundation
 
 print("Hello, World!")
 
-var array = [1, 5, 3, 4, 2]
+var array = [5, 4, 3, 2, 1]
 
-let vs = BubbleSort()
+/*let bs = BubbleSort()
 
-vs.bubbleSort(&array)
+bs.bubbleSort(&array)*/
+
+let ss = SelectionSort()
+
+ss.selectionSort(&array)
 
 print(array)
 

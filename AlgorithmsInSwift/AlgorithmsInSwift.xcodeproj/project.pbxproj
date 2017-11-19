@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0B2AAD51FC1F949003F58DD /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2AAD41FC1F949003F58DD /* util.swift */; };
+		E0B2AAD71FC1FA05003F58DD /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2AAD61FC1FA05003F58DD /* SelectionSort.swift */; };
 		E0FDA6251FC0BF22008DFB5A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FDA6241FC0BF22008DFB5A /* main.swift */; };
 		E0FDA62C1FC0C253008DFB5A /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FDA62B1FC0C253008DFB5A /* BubbleSort.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E0B2AAD41FC1F949003F58DD /* util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
+		E0B2AAD61FC1FA05003F58DD /* SelectionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSort.swift; sourceTree = "<group>"; };
 		E0FDA6211FC0BF22008DFB5A /* AlgorithmsInSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmsInSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FDA6241FC0BF22008DFB5A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E0FDA62B1FC0C253008DFB5A /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
@@ -48,6 +52,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0B2AAD31FC1F925003F58DD /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E0B2AAD41FC1F949003F58DD /* util.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		E0D337611FC1F63F00E8803F /* Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				E0FDA62B1FC0C253008DFB5A /* BubbleSort.swift */,
+				E0B2AAD61FC1FA05003F58DD /* SelectionSort.swift */,
+			);
+			name = Sorting;
+			path = AlgorithmsInSwift/Sorting;
+			sourceTree = SOURCE_ROOT;
+		};
 		E0FDA6181FC0BF22008DFB5A = {
 			isa = PBXGroup;
 			children = (
@@ -68,8 +90,9 @@
 		E0FDA6231FC0BF22008DFB5A /* AlgorithmsInSwift */ = {
 			isa = PBXGroup;
 			children = (
+				E0B2AAD31FC1F925003F58DD /* Util */,
+				E0D337611FC1F63F00E8803F /* Sorting */,
 				E0FDA6241FC0BF22008DFB5A /* main.swift */,
-				E0FDA62B1FC0C253008DFB5A /* BubbleSort.swift */,
 			);
 			path = AlgorithmsInSwift;
 			sourceTree = "<group>";
@@ -164,6 +187,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B2AAD71FC1FA05003F58DD /* SelectionSort.swift in Sources */,
+				E0B2AAD51FC1F949003F58DD /* util.swift in Sources */,
 				E0FDA6251FC0BF22008DFB5A /* main.swift in Sources */,
 				E0FDA62C1FC0C253008DFB5A /* BubbleSort.swift in Sources */,
 			);
